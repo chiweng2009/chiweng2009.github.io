@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archiv: 2017 | Hexo</title>
+  <title>深拷贝和浅拷贝 | Hexo</title>
   <meta name="author" content="chiweng2009">
+  
+  <meta name="description" content="深拷贝和浅拷贝深拷贝(深复制)和浅拷贝(浅复制)是两个比较通用的概念，尤其在C++语言中，若不弄懂，则会在delete的时候出问题，但是我们在这幸好用的是Java。虽然java自动管理对象的回收，但对于深拷贝(深复制)和浅拷贝(浅复制)，我们还是要给予足够的重视，因为有时这两个概念往往会给我们带来不">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="深拷贝和浅拷贝"/>
   <meta property="og:site_name" content="Hexo"/>
 
   
@@ -40,49 +42,76 @@
 </nav>
   </header>
   <div id="content" class="container">
-    
-<h2 class="archive-title"><i class="fa fa-archive"></i>2017</h2>
-
-
-    <div class="archive">
-	<article class="post"
-		<header>
-		  <time datetime="2017-02-08T01:57:40.000Z"><a href="/2017/02/08/深拷贝和浅拷贝/">2017-02-08</a></time>
-		  <h1 class="title"><a href="/2017/02/08/深拷贝和浅拷贝/">深拷贝和浅拷贝</a></h1>
-		  
-			  <div class="tags">
-			  	<i class="fa fa-tag"></i>
-			    <a href="/tags/java/">java</a>
-			  </div>
-			
-
-
-		</header>
-	</article>
-    </div>
-
-    <div class="archive">
-	<article class="post"
-		<header>
-		  <time datetime="2017-02-08T01:57:40.000Z"><a href="/2017/02/08/并发相关/">2017-02-08</a></time>
-		  <h1 class="title"><a href="/2017/02/08/并发相关/">并发相关</a></h1>
-		  
-			  <div class="tags">
-			  	<i class="fa fa-tag"></i>
-			    <a href="/tags/concurrency/">concurrency</a>
-			  </div>
-			
-
-
-		</header>
-	</article>
-    </div>
-
-<nav id="pagination">
+    <article class="post">
   
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+      <time datetime="2017-02-08T01:57:40.000Z"><a href="/2017/02/08/深拷贝和浅拷贝/">Wed, Feb 8 2017, 9:57:40 am</a></time>
+
+  
+    <h1 class="title">深拷贝和浅拷贝</h1>
+  
+
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/java/">java</a>
+  </div>
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <h2 id="深拷贝和浅拷贝"><a href="#深拷贝和浅拷贝" class="headerlink" title="深拷贝和浅拷贝"></a>深拷贝和浅拷贝</h2><p>深拷贝(深复制)和浅拷贝(浅复制)是两个比较通用的概念，尤其在C++语言中，若不弄懂，则会在delete的时候出问题，但是我们在这幸好用的是Java。虽然java自动管理对象的回收，但对于深拷贝(深复制)和浅拷贝(浅复制)，我们还是要给予足够的重视，因为有时这两个概念往往会给我们带来不小的困惑。</p>
+<p>浅拷贝是指拷贝对象时仅仅拷贝对象本身（包括对象中的基本变量），而不拷贝对象包含的引用指向的对象。深拷贝不仅拷贝对象本身，而且拷贝对象包含的引用指向的所有对象。举例来说更加清楚：对象A1中包含对B1的引用，B1中包含对C1的引用。浅拷贝A1得到A2，A2 中依然包含对B1的引用，B1中依然包含对C1的引用。深拷贝则是对浅拷贝的递归，深拷贝A1得到A2，A2中包含对B2（B1的copy）的引用，B2 中包含对C2（C1的copy）的引用。</p>
+
+      
+    </div>
+    <footer>
+      
+          
+          <div class="clearfix"></div>
+          <nav id="pagination">
+  
+  
+    <a href="/2017/02/08/并发相关/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
   
   <div class="clearfix"></div>
 </nav>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+      <!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread" data-thread-key="/2017/02/08/深拷贝和浅拷贝/"></div>
+<!-- Duoshuo Comment END -->
+  
+</section>
+
+
 
     <div class="clearfix"></div>
   </div>
